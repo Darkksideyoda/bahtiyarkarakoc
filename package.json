@@ -3,25 +3,58 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "start http://localhost:3000 && next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "dependencies": {
+    "@nextui-org/react": "^2.2.9",
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.12",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.0",
+    "framer-motion": "^10.16.12",
+    "framer-motion-3d": "^10.16.16",
+    "lottie-react": "^2.4.0",
+    "next": "14.0.3",
+    "next-themes": "^0.2.1",
     "react": "^18",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^18",
-    "next": "14.0.3"
+    "react-fast-marquee": "^1.6.2",
+    "react-responsive": "^9.0.2",
+    "react-scroll-parallax": "^3.4.5",
+    "sass": "^1.69.6",
+    "styled-icons": "^10.47.0",
+    "react-circular-menu-customization": "github:Darkksideyoda/react-circular-menu-customization"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.0.3"
-  }
+    "eslint-config-next": "14.0.3",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-next": "^0.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "postcss": "^8",
+    "prettier": "*",
+    "prettier-plugin-tailwindcss": "*",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "browser": "google chrome"
 }
